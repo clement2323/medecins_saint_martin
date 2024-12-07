@@ -1,0 +1,33 @@
+type,categorie
+Dentiste,Dentaire
+Gynécologue,Spécialistes médicaux
+Kinésithérapeute,Paramédical
+Cardiologue,Spécialistes médicaux
+Medecin Généraliste,Médecine générale
+Podologue,Paramédical
+Pharmacie,Pharmacie et équipements
+Ophtalmologiste,Spécialistes médicaux
+Gastro-entérologue,Spécialistes médicaux
+Osthéo,Paramédical
+Laboratoire,Services médicaux
+Chirurgien Orthopediste,Spécialistes médicaux
+Ambulance,Services médicaux
+Surdité,Paramédical
+Radio,Services médicaux
+Pédiatre,Spécialistes médicaux
+Sage-Femme,Paramédical
+Infirmier(E),Paramédical
+Dialyse,Services médicaux
+Soins A Domicile,Services médicaux
+Réeducation,Paramédical
+Psychologue,Paramédical
+Ostéopathe,Paramédical
+Matériel médical,Pharmacie et équipements
+Ime,Services médicaux
+Crf,Services médicaux
+Medecin Vasculaire,Spécialistes médicaux
+Dermatologue,Spécialistes médicaux
+Orthophoniste,Paramédical
+Orthoprothésiste,Paramédical
+Ostheopathe,Paramédical
+,Non catégorisé

@@ -117,5 +117,5 @@ map <- leaflet(data_sante_sf) %>%
 # Sauvegarder la carte
 
 saveWidget(map, 
-          file = "docs/carte_sante_sxm.html", 
+          file = "docs/index.html", 
           selfcontained = TRUE)

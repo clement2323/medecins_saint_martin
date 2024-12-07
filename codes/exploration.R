@@ -109,7 +109,7 @@ map <- leaflet(data_sante_sf) %>%
   addLegend(
     colors = c("black", color_palette), 
     labels = categories,
-    title = "Types de professionnels",
+    title = "Catégories",
     position = "bottomleft"  # Déplacée en bas à gauche
   )
 

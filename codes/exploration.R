@@ -120,6 +120,8 @@ map <- leaflet(data_sante_sf) %>%
 
 saveWidget(
           map, 
-          file = "docs/index.html", 
+          file = "index.html", 
           selfcontained = TRUE
           )
+file.copy("index.html","docs/index.html")
+file.remove("index.html")

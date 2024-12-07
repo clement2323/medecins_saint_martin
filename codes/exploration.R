@@ -81,7 +81,7 @@ colors <- categorie_to_col[data_sante_sf$categorie]%>%unname()
 map <- leaflet(data_sante_sf) %>% 
   # Fonds de carte
   addTiles(group = "OpenStreetMap") %>%
-  addProviderTiles(providers$Stadia.StamenToner, group = "Dark Mode") %>%
+  addProviderTiles(providers$CartoDB.DarkMatter, group = "Dark Mode") %>%
   addProviderTiles(providers$Esri.WorldImagery, group = "Satellite") %>%
   
   # Ajouter les points par type

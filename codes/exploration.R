@@ -95,8 +95,7 @@ map <- leaflet(data_sante_sf) %>%
                     denomination, quartiers, type, categorie),
     group = ~type
   ) %>%
-
-  # Contrôle des couches
+ # Contrôle des couches
   addLayersControl(
     baseGroups = c("Dark Mode","OpenStreetMap","Satellite"),
     overlayGroups = c(
@@ -105,17 +104,22 @@ map <- leaflet(data_sante_sf) %>%
     options = layersControlOptions(collapsed = TRUE)
   ) %>%
   
+  # Masquer tous les groupes sauf Médecin Généraliste, Dentiste et Laboratoire
+  hideGroup(setdiff(unique(data_sante_sf$type), 
+                   c("Medecin Généraliste", "Dentiste", "Laboratoire"))) %>%
+  
   # Légende en bas à gauche
   addLegend(
     colors = c("black", color_palette), 
     labels = categories,
     title = "Catégories",
-    position = "bottomleft"  # Déplacée en bas à gauche
+    position = "bottomleft"
   )
-
 
 # Sauvegarder la carte
 
-saveWidget(map, 
+saveWidget(
+          map, 
           file = "docs/index.html", 
-          selfcontained = TRUE)
+          selfcontained = TRUE
+          )
